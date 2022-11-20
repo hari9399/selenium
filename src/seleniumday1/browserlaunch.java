@@ -12,9 +12,7 @@ public class browserlaunch {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		String title = driver.getTitle();
-		//System.out.println(title);
 		String currentUrl = driver.getCurrentUrl();
-		//System.out.println(currentUrl);
 		WebElement txtusername = driver.findElement(By.id("email"));
 		txtusername.sendKeys("hari123");
 		WebElement txtpassword = driver.findElement(By.id("pass"));
